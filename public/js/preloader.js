@@ -1,9 +1,9 @@
 $(document).ready(function () {
     setTimeout(function () {
-        $('.preloader').fadeOut(300, function () {
+        $('.preloader').fadeOut(150, function () {
             $(this).remove();
         });
-    }, 250);
+    }, 200);
 });
 
 (function () {
