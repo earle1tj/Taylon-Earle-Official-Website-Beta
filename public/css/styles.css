@@ -38,6 +38,7 @@ html {
 
 body { 
     text-align: center;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -196,7 +197,7 @@ text-align: center;
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+    color: #0054e6;
 }
 
 .nav div.main_list {
@@ -228,7 +229,7 @@ text-align: center;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #0023e6;
 }
 
 
