@@ -163,13 +163,8 @@ body {
     padding: 30px;
 }
 
-<<<<<<< Updated upstream
-.nav div.logo a:hover {
-    color: #00E676;
-}
-=======
+
 /* Resume */
->>>>>>> Stashed changes
 
 
 #resume {
@@ -186,7 +181,6 @@ body {
     padding: 5%;
 }
 
-<<<<<<< Updated upstream
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #fff;
@@ -194,15 +188,12 @@ body {
     font-size: 2.4rem;
 }
 
-.nav div.main_list ul li a:hover {
-    color: #00E676;
-=======
+
 .resume-blocks {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
->>>>>>> Stashed changes
 }
 
 .resume-block ul { 
