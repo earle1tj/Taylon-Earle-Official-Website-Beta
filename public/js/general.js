@@ -15,3 +15,12 @@ $(window).scroll(function () {
         $('.nav').removeClass('affix');
     }
 });
+
+
+document.getElementById("resumeButton").onclick = function () {
+    location.href = "/resume";
+};
+
+function onclick() { 
+    console.log(element.id);
+}
