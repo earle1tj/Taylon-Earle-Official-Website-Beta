@@ -44,6 +44,12 @@ app.get('home/taylsqya/app/', (req, res) => {
 
 });
 
+app.get('/', (req, res) => {
+    res.render("home", {
+
+    });
+
+});
 
 
 app.get('/developmentbeta', (req, res) => {
@@ -56,6 +62,14 @@ app.get('/developmentbeta', (req, res) => {
 
 
 app.get('home/taylsqya/app/contact', (req, res) => {
+    res.render("contact", {
+
+    });
+
+});
+
+
+app.get('/contact', (req, res) => {
     res.render("contact", {
 
     });
@@ -86,6 +100,28 @@ app.post('home/taylsqya/app/contact', (req, res) => {
     
 })
 
+app.post('/contact', (req, res) => {
+
+    let mailOptions = {
+        from: process.env.MAIL_USERNAME,
+        to: 'info@taylonearle.com',
+        subject: req.body.subject,
+        text: "From: " + req.body.email + "\nName: " + req.body.name + "\nMessage: " + req.body.message + "\n" + req.body.authorization,
+}
+
+
+
+    transporter.sendMail(mailOptions, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Email sent successfully");
+        }
+    })
+
+    res.redirect("/");
+    
+})
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}`)
 })
