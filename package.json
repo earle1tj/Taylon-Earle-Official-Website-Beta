@@ -1,7 +1,7 @@
 {
-  "name": "panther-pack-cafe",
+  "name": "taylon-james-earle",
   "version": "1.0.0",
-  "description": "Panther Pack Cafe",
+  "description": "Taylon James Earle",
   "main": "app.js",
   "scripts": {
     "start": "node .",
