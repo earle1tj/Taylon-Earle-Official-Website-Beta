@@ -13,13 +13,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   scroll-behavior: smooth;
-}
-
-#mainhero {
-  background: rgb(64, 73, 255);
-  color: white;
-  width: 100% !important;
-  height: 100vh;
+  width: 100vw;
 }
 
 .mainh1 {
@@ -30,9 +24,9 @@ body {
   font-size: 5vw !important;
 }
 
-#herocontainer {
-  padding-top: 50%;
-  height: 50%;
+#mainhero {
+  background: rgb(64, 73, 255);
+  color: white;
 }
 
 footer {
@@ -69,10 +63,14 @@ hr.style13 {
   background-color: blue;
 }
 
-@media screen and (min-width: 600px) {
-  #mainhero {
-    background: rgb(64, 73, 255);
+@media screen and (min-width: 425px) {
+  .formgroup {
     width: 100% !important;
+  }
+  .contacttext {
+    font-size: 250px !important;
+  }
+  #mainhero {
     height: 50vh;
   }
   .mainh1 {
@@ -81,14 +79,23 @@ hr.style13 {
   .mainp {
     font-size: 2.5rem !important;
   }
-  #herocontainer {
-    padding-top: 5%;
-    height: 100%;
-  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   .formgroup {
     width: 100% !important;
+  }
+  .contacttext {
+    font-size: 250px !important;
+  }
+  #mainhero {
+    width: 100% !important;
+    height: 100vh !important;
+  }
+  .mainh1 {
+    font-size: 5rem !important;
+  }
+  .mainp {
+    font-size: 2.5rem !important;
   }
 }
 
