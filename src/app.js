@@ -46,6 +46,15 @@ app.get('/', (req, res) => {
 
 
 
+app.get('/developmentbeta', (req, res) => {
+    res.render("home", {
+
+    });
+
+});
+
+
+
 app.get('/contact', (req, res) => {
     res.render("contact", {
 
