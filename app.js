@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-app.get('/', (req, res) => {
+app.get('home/taylsqya/app/', (req, res) => {
     res.render("home", {
 
     });
@@ -55,7 +55,7 @@ app.get('/developmentbeta', (req, res) => {
 
 
 
-app.get('/contact', (req, res) => {
+app.get('home/taylsqya/app/contact', (req, res) => {
     res.render("contact", {
 
     });
@@ -63,7 +63,7 @@ app.get('/contact', (req, res) => {
 });
 
 
-app.post('/contact', (req, res) => {
+app.post('home/taylsqya/app/contact', (req, res) => {
 
     let mailOptions = {
         from: process.env.MAIL_USERNAME,
