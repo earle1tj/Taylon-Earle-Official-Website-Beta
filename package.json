@@ -2,11 +2,11 @@
   "name": "panther-pack-cafe",
   "version": "1.0.0",
   "description": "Panther Pack Cafe",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "start": "node .",
     "dev": "nodemon . & npm run scss",
-    "scss": "sass --watch src/scss/index.scss public/css/style.css",
+    "scss": "sass --watch /scss/index.scss public/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Taylon Earle",
