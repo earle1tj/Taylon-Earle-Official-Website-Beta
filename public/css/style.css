@@ -27,6 +27,7 @@ body {
 #mainhero {
   background: rgb(64, 73, 255);
   color: white;
+  height: 100vh;
 }
 
 footer {
